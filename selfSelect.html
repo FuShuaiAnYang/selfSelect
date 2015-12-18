@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="selfSelect.js"></script>
+	<link rel="stylesheet" href="selfSelect.css"/>
+</head>
+<body id="body">
+	<!-- <div class="select-region">
+		<div class="btn-group">
+			<span id="btn_group_span">下拉</span>
+			<span class="caret"></span>
+		</div>
+		<div class="dropdown-menu">
+			<div class="bs-searchbox">
+				<input class="form-control" type="text" name="zuhu" autocomplete="off"/>
+			</div>
+			<ul class="dropdown-menu-inner">
+				<li>测试：北森人才管理有限公司</li>
+				<li>北京大学</li>
+	            <li>清华大学</li>
+	            <li>武汉大学</li>
+	            <li>浙江大学</li>
+	            <li>四川大学</li>
+			</ul>
+		</div>
+	</div> -->
+</body>
+</html>
+<script type="text/javascript">
+	var s = new SelfSelect({
+		contentId: 'body',
+		data: [{"text":"测试：北森"},{"text":"测试：北森人才"},{"text":"测试：北森人才管理"},{"text":"测试：北森人才管理有限"},{"text":"测试：北森人才管理有限公司"}],
+		width: '252'
+	});
+	s.init();
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<table id="table">
+	</table>
+</body>
+</html>
+<script type="text/javascript">
+	var colNum = 9;
+	var rowNum = 4;
+	var table = document.getElementById('table');
+	var str = "";
+
+	for(var i=0;i<4;i++){
+		str += "<tr><td>年份</td><td>1991</td><td>1992</td><td>1993</td><td>1994</td><td>1995</td><td>1996</td><td>1997</td><td>1998</td></tr>"
+		str += "<tr><td>访问量</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>";
+	}
+
+	table.innerHTML = str;
+</script>
